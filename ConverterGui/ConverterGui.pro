@@ -17,3 +17,5 @@ SOURCES += main.cpp \
 
 HEADERS  += \
     main_window.h
+
+FORMS +=

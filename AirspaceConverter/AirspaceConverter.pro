@@ -16,6 +16,7 @@ SOURCES += airspace_converter.cpp
 HEADERS += airspace_converter.h\
         airspaceconverter_global.h
 
+
 unix {
     target.path = /usr/lib
     INSTALLS += target
