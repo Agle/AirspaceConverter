@@ -1,14 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QMainWindow>
-#include <QHBoxLayout>
-#include <QPushButton>
-#include <QLineEdit>
-#include <QWidget>
-#include <QFileDialog>
-#include <QDebug>
-#include <QComboBox>
-#include <QFileInfo>
+#include "Gui/airspace_converter_interface.h"
+#include "FileChooser/file_chooser.h"
 
 
 class MainWindow : public QMainWindow{
@@ -19,22 +13,10 @@ public:
     ~MainWindow();
 
 protected:
-    // members
-    QWidget* centralWgt;
-    QHBoxLayout* main_lt;
-    QPushButton* vib_btn;
-    QComboBox* spisok_btn;
-    QPushButton* ok_btn;
-    QLineEdit* line;
+    AirspaceConverterInterface* centralWgt;
 
 
-    // methods
-    void createGui();
 
-protected slots:
-    void FilePath_clicked();
-    void Save_clicked();
-    void Combo_clicked();
 
 };
 
