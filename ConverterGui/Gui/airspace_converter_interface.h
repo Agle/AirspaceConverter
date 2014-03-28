@@ -12,7 +12,6 @@
 #include <QFileInfo>
 #include <QTextEdit>
 #include <QGridLayout>
-
 #include "FileChooser/file_chooser.h"
 
 class AirspaceConverterInterface : public QWidget{
@@ -26,7 +25,6 @@ protected:
     // members
     QGridLayout* main_lt;
     QTextEdit* text_lt;
-   // QGridLayout* top_lt;
     QComboBox* spisok_btn;
     QPushButton* ok_btn;
     AirspaceConverterInterface* converterGui;

@@ -2,7 +2,7 @@
 #include"FileChooser/file_chooser.h"
 
 AirspaceConverterInterface::AirspaceConverterInterface(QWidget *parent) : QWidget(parent){
- main_lt = new QGridLayout;
+    main_lt = new QGridLayout;
     this->createGui();
     QObject::connect(ok_btn, SIGNAL(clicked()), this, SLOT(Save_clicked()));
     QObject::connect(spisok_btn, SIGNAL(clicked()), this, SLOT(Combo_clicked()));
@@ -16,16 +16,13 @@ void AirspaceConverterInterface::createGui(){
     spisok_btn = new QComboBox();
     ok_btn = new QPushButton(QObject::tr("Ok"));
     main_lt->addWidget(leftWgt);
-
     spisok_btn->addItem("dwg");
     spisok_btn->addItem("dfx");
     spisok_btn->addItem("txt");
-
     main_lt->addWidget(spisok_btn);
     main_lt->addWidget(ok_btn);
     main_lt->addWidget(text_lt);
     this->setLayout(main_lt);
-    //this->setLayout(top_lt);
 }
 
 // protected slots

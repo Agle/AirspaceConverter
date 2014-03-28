@@ -12,10 +12,9 @@ void filechooser::filepath(){
     line = new QLineEdit;
     left_lt->addWidget(vib_btn);
     left_lt->addWidget(line);
-     this->setLayout(left_lt);
+    this->setLayout(left_lt);
   }
 void filechooser::FilePath_clicked(){
-   // line->setText (QFileDialog::getOpenFileName(this,tr("Open File"),"",tr("*.dwg;;*.txt;;*.cpp")));
     QFileInfo fi(QFileDialog::getOpenFileName(this,tr("Open File"),"",tr("*.dwg;;*.txt;;*.cpp")));
     line->setText(fi.fileName());
 
