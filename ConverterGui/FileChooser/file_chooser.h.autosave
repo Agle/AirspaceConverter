@@ -21,8 +21,8 @@ public:
 protected:
     // members
     QHBoxLayout* left_lt;
-    QPushButton* vib_btn;
-    QLineEdit* line;
+    QPushButton* vib_btn;//создание клавиши ...
+    QLineEdit* line;//создание LineEdit(куда выводится имя файла)
     filechooser* converterGui;
 
 protected slots:

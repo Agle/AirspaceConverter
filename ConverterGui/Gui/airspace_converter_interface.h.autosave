@@ -23,10 +23,10 @@ public:
 
 protected:
     // members
-    QGridLayout* main_lt;
-    QTextEdit* text_lt;
-    QComboBox* spisok_btn;
-    QPushButton* ok_btn;
+    QGridLayout* main_lt; 
+    QTextEdit* text_lt; //создание текстового окна внизу
+    QComboBox* spisok_btn;//создание выпадающего списка
+    QPushButton* ok_btn;//создание клавиши ок
     AirspaceConverterInterface* converterGui;
 
     filechooser* leftWgt;

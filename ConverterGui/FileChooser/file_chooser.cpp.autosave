@@ -8,8 +8,8 @@ filechooser::filechooser(QWidget *parent) :QWidget(parent){
 
 void filechooser::filepath(){
     left_lt = new QHBoxLayout; //метод расстановки по горизонтали 
-    vib_btn = new QPushButton(QObject::tr("..."));//создание клавиши ...
-    line = new QLineEdit;//Создание строки
+    vib_btn = new QPushButton(QObject::tr("..."));//создание клавиши ... на форме
+    line = new QLineEdit;//Создание строки на форме
     //Порядок расстановки на форме
     left_lt->addWidget(vib_btn);
     left_lt->addWidget(line);
