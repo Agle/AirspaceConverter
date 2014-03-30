@@ -1,7 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
 #include <QMainWindow>
+#include "Gui/airspace_converter_interface.h"
+#include "FileChooser/file_chooser.h"
+
 
 class MainWindow : public QMainWindow{
     Q_OBJECT
@@ -9,6 +11,13 @@ class MainWindow : public QMainWindow{
 public:
     MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+protected:
+    AirspaceConverterInterface* centralWgt;
+
+
+
+
 };
 
-#endif // MAINWINDOW_H
+#endif // MAIN_WINDOW_H
